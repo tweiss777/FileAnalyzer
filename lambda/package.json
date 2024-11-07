@@ -1,0 +1,20 @@
+{
+    "name": "lambda",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "node index.js",
+        "build": "tsc -b &&cp -R node_modules/ dist/node_modules",
+        "watch": "tsc -w"
+    },
+    "dependencies": {
+        "busboy": "^1.6.0"
+    },
+    "devDependencies": {
+        "@types/aws-lambda": "^8.10.145",
+        "@types/busboy": "^1.5.4",
+        "@types/node": "^22.9.0",
+        "typescript": "^5.6.3"
+    }
+}
